@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UXly Splash Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #eb5763;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 1200px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .tagline {
+      margin-top: 40px;
+      font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive font size */
+      font-family: "Roboto", sans-serif;
+      text-align: center; /* Ensure text is centered */
+      word-wrap: break-word; /* Handle long text wrapping */
+    }
+
+    .social-icons {
+      margin-top: 50px;
+    }
+
+    .icon {
+      display: inline-block; /* Ensure the hover effect applies to the entire link */
+      margin: 0 1.5vw; /* Reduced spacing for smaller icons */
+      font-size: 3.5vw; /* Reduced size for the icons */
+      color: #fff; /* Solid white color */
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation for hover */
+    }
+
+    .icon:hover {
+      transform: scale(1.1); /* Slightly enlarge on hover */
+      color: #fafafa; /* Optional: change color on hover */
+    }
+
+    .icon i {
+      display: block; /* Ensures icons align properly */
+    }
+
+    /* Adjust font size for very small screens */
+    @media (max-width: 600px) {
+      .icon {
+        font-size: 5vw; /* Larger for smaller screens */
+        margin: 0 3vw; /* Adjust spacing */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+        <img src="./UXLY.png" alt="UXly Logo">
+    </div>
+    <div class="tagline">Creators of 1Shot API.</div>
+    <div class="social-icons">
+        <a href="https://github.com/UXlySoftware" class="icon"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/uxlysoftware" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/uxly/" class="icon"><i class="fab fa-linkedin"></i></a>
+        <a href="t.me/oneshotapi" class="icon"><i class="fab fa-telegram"></i></a>
+    </div>
+  </div>
+</body>
+</html>
